@@ -1,18 +1,16 @@
-import Navbar from "./_components/Navbar"
+import Footer from "./_components/Footer";
+import Navbar from "./_components/Navbar";
 
 export default function MarketingLayout({
-    children
+  children,
 }: {
-  children: React.ReactNode
-}
-) {
+  children: React.ReactNode;
+}) {
   return (
     <div className="h-full bg-slate-100">
-        <Navbar />
-        <main className="pt-40 pb-20 bg-slate-100">
-        {children}
-        </main>
-        {/* {footer} */}
+      <Navbar />
+      <main className="pt-40 pb-20 bg-slate-100">{children}</main>
+      <Footer />
     </div>
-  )
+  );
 }
